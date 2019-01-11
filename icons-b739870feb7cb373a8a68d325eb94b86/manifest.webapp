@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "blakek.me",
+  "description": null,
+  "icons": {
+    "60": "/icons-b739870feb7cb373a8a68d325eb94b86/firefox_app_60x60.png",
+    "128": "/icons-b739870feb7cb373a8a68d325eb94b86/firefox_app_128x128.png",
+    "512": "/icons-b739870feb7cb373a8a68d325eb94b86/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}

@@ -14,12 +14,14 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "npm run develop"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
     "eslint-config-gsandf-react": "^1.1.0",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.15.2"
   },
   "dependencies": {

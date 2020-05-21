@@ -16,6 +16,7 @@
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
+    "lint": "amper-scripts lint",
     "start": "npm run develop"
   },
   "devDependencies": {

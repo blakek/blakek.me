@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, keywords, title }) {
@@ -12,6 +12,13 @@ function SEO({ description, lang, meta, keywords, title }) {
           description || data.site.siteMetadata.description;
         return (
           <Helmet
+            link={[
+              {
+                href:
+                  'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=fallback',
+                rel: 'stylesheet'
+              }
+            ]}
             htmlAttributes={{
               lang
             }}

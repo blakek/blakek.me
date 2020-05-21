@@ -19,8 +19,9 @@
     "start": "npm run develop"
   },
   "devDependencies": {
+    "amper-scripts": "^1.0.0-0",
     "eslint": "^5.12.0",
-    "eslint-config-gsandf-react": "^1.1.0",
+    "eslint-config-gsandf-react": "^2.0.1",
     "gh-pages": "^2.0.1",
     "prettier": "^1.15.2"
   },

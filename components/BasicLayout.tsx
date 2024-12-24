@@ -1,5 +1,10 @@
 import Head from "next/head";
 import type React from "react";
+import {
+  EB_Garamond,
+  Playfair_Display,
+  JetBrains_Mono,
+} from "next/font/google";
 
 export interface BasicTemplateProps {
   children: React.ReactNode;
@@ -9,6 +14,21 @@ export interface BasicTemplateProps {
   socialMediaImage?: string;
   title?: string;
 }
+
+const bodyFont = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+
+const headerFont = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-header",
+});
+
+const codeFont = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-code",
+});
 
 export function BasicLayout({
   children,
@@ -38,7 +58,9 @@ export function BasicLayout({
         {noIndex && <meta name="robots" content="noindex" />}
       </Head>
 
-      <div>
+      <div
+        className={`${bodyFont.variable} ${headerFont.variable} ${codeFont.variable}`}
+      >
         <main>{children}</main>
       </div>
     </>

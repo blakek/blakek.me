@@ -1,11 +1,12 @@
 import { BasicLayout } from "@/components/BasicLayout";
+import { Heading } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <BasicLayout>
-      <h1>
+      <Heading>
         Blake Knight & Tests <em>& more…</em>
-      </h1>
+      </Heading>
     </BasicLayout>
   );
 }
